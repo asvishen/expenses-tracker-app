@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/Silver"
+    android:gravity="center">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:background="#33b5e5"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:text="Add Account"
+        />
+
+</RelativeLayout>

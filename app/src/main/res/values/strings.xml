@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ExpensesTracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="creditdebit">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Groceries</item>
+        <item>Fuel</item>
+        <item>Electricity</item>
+        <item>Internet</item>
+        <item>Phone</item>
+        <item>Rent</item>
+        <item>Utilities</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="accounts">
+        <item>default account</item>
+
+    </string-array>
+    <string name="title_activity_add_account">Add Account</string>
+</resources>

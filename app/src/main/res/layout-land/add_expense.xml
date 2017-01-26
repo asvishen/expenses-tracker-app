@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+
+    tools:context="edu.asu.msse.avishen.expensestracker.AddFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Description"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:paddingTop="10dp"
+
+        />
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Amount"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:inputType="numberDecimal"
+        android:paddingTop="20dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/cd_label"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Credit/Debit"
+            android:textAlignment="center"
+
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cdspinner"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+
+            android:layout_alignParentBottom="true"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/category_label"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Category"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/categoryspinner"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Month"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/monthspinner"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentBottom="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ac_label"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Account"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:id="@+id/acc_spinner"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/add_expense"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:onClick="addValues"
+            android:background="@drawable/startbutton"
+            android:layout_marginLeft="40dp"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/startbutton"
+            android:layout_marginLeft="100dp"
+
+            android:layout_below="@id/category_label"
+            android:onClick="onCancelAdd"
+            android:text="CANCEL" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
